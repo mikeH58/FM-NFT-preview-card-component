@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color:#0D192C;
+    font-family: 'Outfit', sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh; 
+}
+
+.card{
+    width:350px;
+    height:596px;
+    background-color:#15263F;
+    border-radius:15px;
+    padding:24px;
+}
+
+.card img{
+    max-width: 100%;
+    border-radius:8px;
+    display:block;
+}
+
+.card h1{
+    /* font-style: normal; */
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color:#fff;
+    margin-top:24px;
+    margin-bottom:16px;
+}
+
+.card p{
+font-size: 18px;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+color:#8BACD9;
+margin-bottom:24px;
+}
+
+.card-info{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-info img{
+    display: inline-block;
+    max-width: 100%;
+}
+
+.card-price{
+    display:flex;
+    flex-wrap: wrap;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0px;
+/* vertical-align: baseline; */
+color:#00FFF8;
+}
+
+.card-price img{
+    padding-right:6.48px;
+}
+
