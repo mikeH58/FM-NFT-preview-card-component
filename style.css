@@ -16,21 +16,43 @@ body{
 }
 
 .card{
+    position: relative;
     width:350px;
     height:596px;
     background-color:#15263F;
     border-radius:15px;
     padding:24px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.card img{
+.card-img{
     max-width: 100%;
     border-radius:8px;
     display:block;
+    background:none;
 }
 
+  .overlay {
+    position: absolute;
+    top: 25px;
+    left: 24px;
+    height: 302px;
+    width: 302px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:8px;
+    opacity: 0;
+    background: rgba(0, 255, 248, .5) 
+  }
+
+  .overlay:hover{
+    opacity:1;
+    cursor: pointer;
+  }
+
+
 .card h1{
-    /* font-style: normal; */
     font-weight: 600;
     font-size: 22px;
     line-height: 28px;
@@ -39,7 +61,12 @@ body{
     margin-bottom:16px;
 }
 
-.card p{
+.card h1:hover{
+    color:#00FFF8;
+    cursor: pointer;
+    }
+
+.card-description{
 font-size: 18px;
 font-weight: 300;
 line-height: 26px;
@@ -51,9 +78,9 @@ margin-bottom:24px;
 
 .card-info{
     display: flex;
-
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom:24px;
 }
 
 .card-info img{
@@ -64,15 +91,67 @@ margin-bottom:24px;
 .card-price{
     display:flex;
     flex-wrap: wrap;
-font-size: 16px;
-font-weight: 600;
-line-height: 20px;
-letter-spacing: 0px;
-/* vertical-align: baseline; */
-color:#00FFF8;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color:#00FFF8;
 }
 
 .card-price img{
     padding-right:6.48px;
 }
 
+
+.card-duration{
+    display:flex;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    align-items: center;
+    color:#8BACD9;
+}
+
+.card-duration img{
+    padding-right:7.7px;
+    height:16px;
+}
+
+hr{
+    border: none;
+    height:1px;
+    background-color:#2E405A;
+    margin-bottom:16px;
+}
+
+
+footer{
+    display:flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    height:33px;
+}
+
+footer p{
+    color:#8BACD9;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.authorAvatar{
+height:33px;
+border:1px solid #fff;
+border-radius:50%;
+margin-right:16px;
+}
+
+.author-name{
+color:#ffffff;
+}
+
+.author-name:hover{
+    color:#00FFF8;
+    cursor: pointer;
+    }
